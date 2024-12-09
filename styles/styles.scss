@@ -1,0 +1,436 @@
+$fuente_principal: 'Roboto', sans-serif;
+
+// Colores
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+
+
+
+
+html{
+  font-size: 1.6rem;
+}
+body {
+  font-family: $fuente_principal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+ 
+}
+
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto; 
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  img{
+    margin-left: 12rem;
+  }
+
+  nav a {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+
+
+    &.btn-registrar {
+      background: $primario;
+      color: $blanco;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+.hero{
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: 43% 52%; 
+  max-width: 50rem;
+  height: 20rem;
+  margin-left: 14.1rem;
+
+
+  .hero-text{
+    background-color: $primario;
+    width: 95%;
+    
+    padding-top:2.5rem ;
+  }
+  .centerdiv{
+    width: 90%;
+    margin: 0 auto;
+    color: $blanco;
+  }
+  .centerdiv > H1{
+    text-align: center; 
+    font-size: 1.3rem; 
+    padding-bottom: 1.5rem;
+  }
+  .search-form{
+    font-size: 0.5rem;
+  }
+  .hero-image{
+    align-self: self-end;
+    width: 70%;
+  }
+  input{
+    width: 97%;
+    height: 1.4rem;
+  }
+  button{
+    width: 99%;
+    height:1.4rem;
+    background-color: $secundario;
+    border: none;
+    border-radius: 10px;
+    color: $blanco;
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin-top: 9px;
+  }
+}
+
+.section1{
+  background-color: $primario;
+  text-align: center;
+  color: $blanco;
+  padding: 0;
+  
+  .title2{
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+  .texto2{
+    margin-top: 0;
+  }
+  .steps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 55%;
+    margin: auto;
+    gap: 0;
+  }
+}
+
+  .testimonios{
+
+  h2{
+    text-align: center;
+    color: $negro; 
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    width: 62%;
+    margin: 0 auto;
+    color: $blanco;
+  }
+  .card1 img:first-of-type,
+  .card2 img:first-of-type,
+  .card3 img:first-of-type,
+  .card4 img:first-of-type,
+  .card5 img:first-of-type
+  {
+    width: 78px;
+    border-radius: 50%;   
+  }
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5{
+    background-color: $secundario;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+
+  .card1{
+    grid-column: 1/4;
+    padding-top: 15px;
+    img:first-of-type{
+      float: left;
+      padding: 0px;
+    }
+    span{
+      margin-left: 20px;
+      line-height: 3;
+      font-weight: 800;
+    }
+    .estrella{
+      margin-left: 18px;
+      margin-top: -35px;
+      width: 150px;
+    }
+    p{
+      padding-top: 10px;
+      line-height: 1.5;
+      padding-left: 40px;
+      padding-right: 10px;
+      letter-spacing: 1px;
+    } 
+  }
+  .card2{
+    grid-column: 1/3;
+    padding: 10px;
+    img:first-of-type{
+      float: left;
+      padding: 0px;
+    }
+    span{
+      margin-left: 20px;
+      line-height: 3;
+      font-weight: 800;
+    }
+    .estrella{
+      margin-left: 18px;
+      margin-top: -35px;
+      width: 150px;
+      
+    }
+    p{
+      padding-top: 10px;
+      line-height: 1.5;
+      padding-left: 30px;
+      padding-right: 10px;
+      letter-spacing: 1px;
+    }  
+  }
+  .card3{
+    grid-column: 3/5;
+    padding: 10px;
+    img:first-of-type{
+      float: left;
+      padding: 0px;
+    }
+    span{
+      margin-left: 20px;
+      line-height: 3;
+      font-weight: 800;
+      
+    }
+    .estrella{
+      margin-left: 18px;
+      margin-top: -35px;
+      width: 150px;
+    }
+    p{
+      padding-top: 10px;
+      line-height: 1.5;
+      padding-left: 30px;
+      padding-right: 10px;
+      letter-spacing: 1px;
+    } 
+  }
+  .card4{
+    grid-column:5/6;
+    grid-row: 1/3;
+    padding-top: 15px;
+    img:first-of-type{
+      float: left;
+      padding: 0px;
+      width: 55px;
+    }
+    span{
+      margin-left: 20px;
+      line-height: 1;
+      font-weight: 800;
+      
+    }
+    .estrella{
+      margin-left: 18px;
+      margin-top: 1px;
+      width: 100px;
+    }
+    p{
+      padding-top: 10px;
+      line-height: 1.5;
+      padding-left: 60px;
+      letter-spacing: 1px;
+      width: 60%;
+    } 
+
+  }
+  .card5{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding-top: 15px;
+    img:first-of-type{
+      float: left;
+      padding: 0px;
+      width: 55px;
+    }
+    span{
+      margin-left: 20px;
+      line-height: 2;
+      font-weight: 800;
+      
+    }
+    .estrella{
+      margin-left: 18px;
+      margin-top: -35px;
+      width: 99px;
+    }
+    p{
+      padding-top: 5px;
+      padding-bottom: 3px;
+      line-height: 1.3;
+      padding-left: 60px;
+      letter-spacing: 1px;
+      width: 60%;
+      height: 85px;
+    } 
+    }
+  }
+
+
+
+
+.restaurants{
+  text-align: center;
+  background-color: $grisClaro;
+  padding-bottom: 2rem;
+  
+
+  h2{
+    padding: 30px 0;
+  }
+  
+  .restaurant-grid{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 38px;
+    width: 62%;
+    margin: 0 auto;
+    
+  }
+  .restaurant-card{
+    background-color: $blanco;
+    box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 90%;
+    padding: 35px 30px 35px 0;
+   
+  }
+  .restaurant-card img:first-of-type{
+    width: 55%;
+    object-fit: contai;
+    margin: auto;
+  }
+  div{
+    text-align: start;
+    
+  }
+  h3{
+    color: $primario;
+    line-height: 0;
+    font-size: 1rem;
+  }
+  p{
+    line-height: 1.4;
+  }
+}
+
+
+.ganadinero {
+  padding: 2rem;
+  background: $blanco;
+
+   h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 62%;
+    margin: auto;
+
+    .text {
+      flex: 1;
+
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+
+      .btn-registrar {
+        display: inline-block;
+        background: $primario;
+        color: $blanco;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+      
+      }
+    }
+
+    .image {
+      flex: 1;
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+footer{
+  background-color: $secundario;
+}
+.footer-container{
+  background-color: $secundario;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 62%;
+  margin: auto;
+  color: $blanco;
+  padding: 20px 0 30px;
+  
+  .footer-section{
+    width: 85%;
+    line-height: 1.5;
+  }
+  ul{
+    list-style: none;
+    ;
+    padding: 0;   
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+}
+.footer-bottom{
+    background-color: $primario;
+    text-align: center;
+    color: $blanco;
+    padding: 15px 0;
+  }
+
+
+
+
+
